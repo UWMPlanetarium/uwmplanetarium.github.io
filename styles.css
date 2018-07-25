@@ -252,6 +252,9 @@ a {
   section, body, html, footer {
     height: 100%;
   }
+  h1, h2 {
+    padding: 0px 20px;
+  }
   .welcomeimage {
     height: 400px;
     background-image: url(images/welcome.png);
