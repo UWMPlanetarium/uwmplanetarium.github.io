@@ -8,14 +8,6 @@ body {
   background: #4B3A5B;
 }
 
-p {
-  font-size: 1.8em;
-  max-width: 1000px;
-  text-align: center;
-  padding: 100px;
-  margin: auto;
-}
-
 a {
   text-decoration: none;
   color: black;
@@ -26,207 +18,390 @@ a {
   src: url(fonts/product-sans.ttf);
 }
 
-nav {
-  height: 75px;
-  width: 100%;
-  position: fixed;
-  color: white;
-  mix-blend-mode: exclusion;
+@media screen and (min-width: 730px) {
+  p {
+    font-size: 1.8em;
+    max-width: 1000px;
+    text-align: center;
+    padding: 100px;
+    margin: auto;
+  }
+  nav {
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    color: white;
+    mix-blend-mode: exclusion;
+  }
+  .nav {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+  }
+  .nav a {
+    font-weight: 300;
+    width: 25%;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    mix-blend-mode: exclusion;
+  }
+  .nav a:hover {
+    background: #222;
+    mix-blend-mode: difference;
+  }
+  section, .main, body, html, footer {
+    height: 100%;
+  }
+  .welcomeimage {
+    height: 100%;
+    background-image: url(images/welcome.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .welcomeimage h1 {
+    font-size: 3em;
+    color: white;
+    text-shadow: -2.5px 2.5px black, -2px 2px black, -1.5px 1.5px black, -1px 1px black, -0.5px 0.5px black;
+  }
+  .about {
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: white;
+  }
+  h2 {
+    padding-top: 60px;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+  }
+  .planetarium {
+    height: 100%;
+    background-image: url(images/welcome.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    width: 100%;
+  }
+  .planetarium h2 {
+    width: 100% !important;
+    height: 100px;
+  }
+  .planetarium p {
+    font-size: 1em;
+    width: 100%;
+    padding: 0px 50px;
+    margin: 0px;
+    height: 90%:
+  }
+  .join {
+    background: white;
+    text-align: center;
+  }
+  .join h2 {
+    width: 100% !important;
+  }
+  .join p {}
+  .submit {
+    height: 60px !important;
+  }
+  input {
+    width: 300px;
+    font-family: product-sans;
+    margin: 10px;
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 1em
+  }
+  form {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  button {
+    width: 150px;
+    height: 70px;
+    border-radius: 10px;
+    background: #4B3A5B;
+    border: 3px solid #32283C;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    color: white
+  }
+  button:hover {
+    background-color: #785E91;
+    border: 3px solid #4B3A5B;
+    cursor: pointer;
+    color: black;
+    transition: 0.3s;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    color: #4B3A5B;
+  }
+  .contact {
+    display: flex;
+    color: white;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 500px);
+  }
+  .contactp {
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 0px;
+    color: white;
+  }
+  .big {
+    font-size: 1.5em;
+  }
+  .small {
+    font-size: 0.5em;
+  }
+  .img {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 25px;
+  }
+  .footer a, .planetarium a {
+    color: white;
+    transition: 0.3s;
+    cursor: pointer
+  }
+  .footer a:hover, .planetarium a:hover {
+    color: gold;
+    transition: 0.3s;
+  }
+  .cred:hover {
+    color: #FF095A !important;
+  }
+
+  .bighide {
+    display: none;
+  }
 }
 
-.nav {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  height: 75px;
-}
 
-.nav a {
-  font-weight: 300;
-  width: 25%;
-  height: 75px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  color: white;
-  mix-blend-mode: exclusion;
-}
+@media screen and (max-width: 729px) {
+  p {
+    font-size: 1.8em;
+    max-width: 1000px;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+  }
+  nav {
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    color: white;
+    mix-blend-mode: exclusion;
 
-.nav a:hover {
-  background: #222;
-  mix-blend-mode: difference;
-}
+  }
+  .nav {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    background: #222
+  }
+  .nav a {
+    font-weight: 300;
+    width: 25%;
+    height: 75px;
+    font-size: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    mix-blend-mode: exclusion;
+  }
+  .nav a:hover {
+    background: #222;
+    mix-blend-mode: difference;
+  }
+  section, body, html, footer {
+    height: 100%;
+  }
+  .welcomeimage {
+    height: 400px;
+    background-image: url(images/welcome.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+  }
+  .welcomeimage h1 {
+    font-size: 3em;
+    color: white;
+    text-shadow: -2.5px 2.5px black, -2px 2px black, -1.5px 1.5px black, -1px 1px black, -0.5px 0.5px black;
+  }
+  .about {
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: white;
+  }
+  .about p {
+    font-size: 1em;
+    padding-bottom: 40px;
+  }
+  h2 {
+    padding-top: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+  }
+  .planetarium {
+    background-image: url(images/welcome.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    width: 100%;
+  }
+  .planetarium h2 {
+    width: 100% !important;
+    padding-bottom: 20px;
+  }
+  .planetarium p {
+    font-size: 1em;
+    width: 100%;
+    padding: 0px 50px;
+    margin: 0px;
+    height: 90%;
+    padding-bottom: 30px
+  }
+  .join {
+    background: white;
+    text-align: center;
+  }
+  .join h2 {
+    width: 100% !important;
+  }
+  .join p {}
+  .submit {
+    height: 60px !important;
+  }
+  input {
+    width: 300px;
+    font-family: product-sans;
+    margin: 10px;
+    text-align: center;
+    padding: 15px 5px;
+    font-size: 1em
+  }
+  form {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  button {
+    width: 150px;
+    height: 70px;
+    border-radius: 10px;
+    background: #4B3A5B;
+    border: 3px solid #32283C;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    color: white
+  }
+  button:hover {
+    background-color: #785E91;
+    border: 3px solid #4B3A5B;
+    cursor: pointer;
+    color: black;
+    transition: 0.3s;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #4B3A5B;
+  }
+  .contact {
+    display: flex;
+    color: white;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    width: calc(100%);
+  }
+  .contactp {
+    font-size: 1em;
+    line-height: 1.5em;
+    padding: 0px;
+    color: white;
+  }
+  .big {
+    font-size: 1.5em;
+  }
+  .small {
+    font-size: 0.5em;
+  }
+  .img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+  }
+  .footer a, .planetarium a {
+    color: white;
+    transition: 0.3s;
+    cursor: pointer
+  }
+  .footer a:hover, .planetarium a:hover {
+    color: gold;
+    transition: 0.3s;
+  }
+  .cred:hover {
+    color: #FF095A !important;
+  }
 
-section, .main, body, html, footer {
-  height: 100%;
-}
-
-.welcomeimage {
-  height: 100%;
-  background-image: url(images/welcome.png);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-
-.welcomeimage h1 {
-  font-size: 3em;
-  color: white;
-  text-shadow: -2.5px 2.5px black, -2px 2px black, -1.5px 1.5px black, -1px 1px black, -0.5px 0.5px black;
-}
-
-.about {
-  color: black;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background: white;
-}
-
-h2 {
-  padding-top: 60px;
-  width: 100%;
-  text-align: center;
-  font-size: 3em;
-}
-
-.planetarium {
-  height: 100%;
-  background-image: url(images/welcome.png);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  color: white;
-  width: 100%;
-}
-.planetarium h2 {
-  width: 100% !important;
-  height: 100px;
-}
-.planetarium p {
-  font-size: 1em;
-  width: 100%;
-  padding: 0px 50px;
-  margin: 0px;
-  height: 90%:
-}
-
-
-.join {
-  background: white;
-  text-align: center;
-}
-
-.join h2 {
-  width: 100% !important;
-}
-
-.join p {
-}
-
-.submit {
-  height: 60px !important;
-}
-
-input {
-  width: 300px;
-  font-family: product-sans;
-  margin: 10px;
-  text-align: center;
-  padding: 15px 5px;
-  font-size: 1em
-}
-
-form {
-  padding-top: 30px;
-  padding-bottom: 60px;
-  width: 100%;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-button {
-  width: 150px;
-  height: 70px;
-  border-radius: 10px;
-  background: #4B3A5B;
-  border: 3px solid #32283C;
-  font-size: 1.5em;
-  margin-bottom: 50px;
-  transition: 0.3s;
-  color: white
-}
-
-button:hover {
-  background-color: #785E91;
-  border: 3px solid #4B3A5B;
-  cursor: pointer;
-  color: black;
-  transition: 0.3s;
-}
-
-.footer {
-  display: flex;
-  align-items: center;
-  height: 150px;
-  color: #4B3A5B;
-}
-
-.contact {
-  display: flex;
-  color: white;
-  height: 150px;
-  justify-content: center;
-  align-items: center;
-  width: calc(100% - 500px);
-}
-
-.contactp {
-  font-size: 1em;
-  line-height: 1.5em;
-  padding: 0px;
-  color: white;
-}
-
-.big {
-  font-size: 1.5em;
-}
-
-.small {
-  font-size: 0.5em;
-}
-
-.img {
-  width: 200px;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 25px;
-}
-
-.footer a, .planetarium a {
-  color: white;
-  transition: 0.3s;
-  cursor: pointer
-}
-
-.footer a:hover, .planetarium a:hover {
-  color: gold;
-  transition: 0.3s;
-}
-
-.cred:hover {
-  color: #FF095A !important;
+  .hide {
+    display: none;
+  }
 }
