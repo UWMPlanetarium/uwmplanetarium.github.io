@@ -252,9 +252,7 @@ a {
   section, body, html, footer {
     height: 100%;
   }
-  h1, h2 {
-    padding: 0px 40px !important;
-  }
+
   .welcomeimage {
     height: 400px;
     background-image: url(images/welcome.png);
@@ -406,5 +404,9 @@ a {
 
   .hide {
     display: none;
+  }
+  h1, h2, h3 {
+    padding: 0px 40px !important;
+    font-size: 0.8em;
   }
 }
