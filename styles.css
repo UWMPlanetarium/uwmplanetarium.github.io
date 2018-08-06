@@ -21,7 +21,6 @@ a {
 @media screen and (min-width: 730px) {
   p {
     font-size: 1.8em;
-    max-width: 1000px;
     text-align: center;
     padding: 100px;
     margin: auto;
@@ -87,8 +86,7 @@ a {
     text-align: center;
     font-size: 3em;
   }
-  .planetarium {
-    height: 100%;
+  .events {
     background-image: url(images/welcome.png);
     background-size: cover;
     background-position: center;
@@ -99,16 +97,25 @@ a {
     color: white;
     width: 100%;
   }
-  .planetarium h2 {
+  .events h2 {
     width: 100% !important;
-    height: 100px;
   }
-  .planetarium p {
+  .eventsp {
     font-size: 1em;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    padding: 0px 50px;
-    margin: 0px;
-    height: 90%:
+    margin: 20px 10%;
+  }
+  .events h3 {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .sticker {
+    width: 200px;
+    height: 200px;
+    margin: auto;
   }
   .join {
     background: white;
@@ -117,7 +124,9 @@ a {
   .join h2 {
     width: 100% !important;
   }
-  .join p {}
+  .join p {
+
+  }
   .submit {
     height: 60px !important;
   }
@@ -190,12 +199,12 @@ a {
     justify-content: center;
     padding: 0px 25px;
   }
-  .footer a, .planetarium a {
+  .footer a, .events a {
     color: white;
     transition: 0.3s;
     cursor: pointer
   }
-  .footer a:hover, .planetarium a:hover {
+  .footer a:hover, .events a:hover {
     color: gold;
     transition: 0.3s;
   }
@@ -286,7 +295,7 @@ a {
     text-align: center;
     font-size: 2.5em;
   }
-  .planetarium {
+  .events {
     background-image: url(images/welcome.png);
     background-size: cover;
     background-position: center;
@@ -297,17 +306,27 @@ a {
     color: white;
     width: 100%;
   }
-  .planetarium h2 {
+  .events h2 {
     width: 100% !important;
     padding-bottom: 20px;
   }
-  .planetarium p {
+  .events p {
     font-size: 1em;
     width: 100%;
     padding: 0px 50px;
     margin: 0px;
     height: 90%;
     padding-bottom: 30px
+  }
+  .events h3 {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+  .sticker {
+    width: 200px;
+    height: 200px;
+    margin: auto;
   }
   .join {
     background: white;
@@ -388,12 +407,12 @@ a {
     justify-content: center;
     padding: 25px 25px;
   }
-  .footer a, .planetarium a {
+  .footer a, .events a {
     color: white;
     transition: 0.3s;
     cursor: pointer
   }
-  .footer a:hover, .planetarium a:hover {
+  .footer a:hover, .events a:hover {
     color: gold;
     transition: 0.3s;
   }
