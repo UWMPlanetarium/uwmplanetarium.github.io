@@ -35,34 +35,32 @@
       <h2>ABOUT</h2>
       <p>
         UWM's Planetarium Club is a free organization for UWM students that meets twice a month during the school year. Here, students and planetarium staff experiment with club equipment such as our HTC VIVE virtual reality headset, starball projector, Uniview,
-        watch past shows and go stargazing. There are also great volunteering opportunities!
+        watch past shows and go stargazing. There are also great <a href="#join">volunteering opportunities!</a>
+      </p>
+      <h2>MEETING TIMES</h2>
+      <p>
+        <!-- CHANGE MEETING TIMES HERE -->
+        FALL 2018: Every other Thursday @ 4:00PM<br /><br />
+        Upcoming Meetings: November 1, November 15, November 29, December 6
       </p>
     </div>
 
     <div class=events>
       <a name="events"></a>
       <h2>EVENTS</h2>
-      <h3>AUGUST 29: STARS N SMORES</h3>
-      <p class=eventsp>Grab a free s’mores kit (1 per person) from the UWM Planetarium Club and roast them over a live fire. Then head inside for a live Planetarium show and learn how to identify constellations visible in the Milwaukee night sky. S’mores will be in the Physics courtyard if weather is permitting, otherwise it will be relocated indoors. Rooftop stargazing will be held separately after this event. Stickers available at the door!</p><img class=sticker src="images/ss_sticker.png">
       <h3>OCTOBER 29, 30, 31: PLANESCARIUM</h3>
       <p class=eventsp>This Halloween join the UWM Planetarium for a spooktacular series of favorite scary movies projected on the planetarium dome. Our feature presentations include Hocus Pocus, IT, and Event Horizon. All shows will be free for UWM students! Stickers available at the door!</p><img class=sticker src="images/planescarium_sticker.png">
+      <h3>DECEMBER 12: HOLIDAY SING ALONG</h3>
+      <p class=eventsp>Holiday Sing Along: Join the UWM Planetarium Club and add your voices to the UWM Collegium Musicum, directed by Tim Sterner Miller, as they perform some familiar (and some less familiar) seasonal music from the Middle Ages and Renaissance on period instruments. As part of our “Music Under the Stars” series, UWM Planetarium director Jean Creighton will provide a guided tour of stars and constellations in the winter sky. In this collaborative event, science and the arts meet in an informative and entertaining journey through time and space. Sunday, Dec. 16 2-3pm</p><img class=sticker style="display: none;" src="images/planescarium_sticker.png">
 <p style="font-size: 2em; width: 100%;"><a href="https://uwm.edu/planetarium/" target=_blank>Visit our website <span class=bighide>for more information</span></a></p>
     </div>
 
     <div class=join>
       <a name=join></a>
       <h2>JOIN US</h2>
-      <!--
-      <form action="https://formspree.io/your@email.com" method="POST">
-        <input class=name type="text" placeholder="First Name" required aria-required="true" name="first"><br />
-
-        <input type="text" placeholder="Last Name" class=name required aria-required="true" name="last"><br />
-
-        <input type="email" required class=email placeholder="Email" aria-required="true" name="_replyto"><br />
-        <input class=submit type="submit" value="SUBMIT">
-    </div>
-    </form>
-  -->
+      <p style="font-size: 1.2em;">
+        The level at which you choose to be involved in the club is up to you, you may come to any or all of the meetings and participate however you feel suited. <br /><br />To be a "registered" club member, you must be active in the club for at LEAST 5hrs/semester (this included meetings, volunteer hours, club organization, etc). Fully registered members will be allowed free admission to public planetarium programs. <br /><br />We are always looking for volunteers and members to take initiative and take on a club role themselves to help organize the club and provide a leadership opportunity to members like you. If you are interested in a leadership role in the club, please see us at one of the <a href="#about">previously mentioned meetings</a> listed.
+      </p>
   <p>
     Click below to be redirected to our sign-up form.
   </p>
@@ -81,7 +79,43 @@
       </div>
     </div>
   </section>
-
+  <script type="text/javascript">
+    // Select all links with hashes
+    $('a[href*="#"]')
+      // Remove links that don't actually link to anything
+      .not('[href="#"]')
+      .not('[href="#0"]')
+      .click(function(event) {
+        // On-page links
+        if (
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+          location.hostname == this.hostname
+        ) {
+          // Figure out element to scroll to
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          // Does a scroll target exist?
+          if (target.length) {
+            // Only prevent default if animation is actually gonna happen
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 800, function() {
+              // Callback after animation
+              // Must change focus!
+              var $target = $(target);
+              $target.focus();
+              if ($target.is(":focus")) { // Checking if the target was focused
+                return false;
+              } else {
+                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                $target.focus(); // Set focus again
+              };
+            });
+          }
+        }
+      });
+  </script>
 
 
 </body>
