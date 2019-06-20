@@ -6,10 +6,12 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
 }
 ::selection {
   background: #4b3a5b;
+  color: white;
 }
 
 ::-moz-selection {
   background: #4b3a5b;
+  color: white;
 }
 
 body {
