@@ -198,9 +198,6 @@ a {
   .big {
     font-size: 1.5em;
   }
-  .small {
-    font-size: 1.5em;
-  }
   .img {
     width: 200px;
     height: 150px;
@@ -405,9 +402,6 @@ a {
     color: white;
   }
   .big {
-    font-size: 1.5em;
-  }
-  .small {
     font-size: 1.5em;
   }
   .img {
